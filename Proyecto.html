@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto | Blanca Portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/proyecto.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <div class="logoSmall">
+        <img src="assets/img/logoSmall.svg" alt="Logo">
+      </div>
+    </a>
+    <nav>
+      <a href="index.html" data-es="TRABAJOS" data-en="WORKS">Trabajos</a>
+      <a href="sobre-mi.html" data-es="SOBRE MÍ" data-en="ABOUT">Sobre mí</a>
+      <a href="contacto.html" data-es="CONTACTO" data-en="CONTACT">Contacto</a>
+    </nav>
+    <div class="lang">
+      <button class="lang-btn activo" data-lang="es">ES</button>
+      <span>/</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="nav-overlay">
+    <nav>
+      <a href="index.html" data-es="TRABAJOS" data-en="WORKS">Trabajos</a>
+      <a href="sobre-mi.html" data-es="SOBRE MÍ" data-en="ABOUT">Sobre mí</a>
+      <a href="contacto.html" data-es="CONTACTO" data-en="CONTACT">Contacto</a>
+    </nav>
+
+    <div class="lang">
+      <button class="lang-btn activo" data-lang="es">ES</button>
+      <span>/</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="seccion-proyecto">
+      <h1 id="proyecto-titulo" class="proyecto-titulo"></h1>
+
+      <div id="proyecto-galeria" class="proyecto-galeria"></div>
+      <p class="proyecto-galeria-nota" data-es="Haz click en las fotos para verlas completas" data-en="Click the photos to view them full size">
+        Haz click en las fotos para verlas completas
+      </p>
+
+      <div class="proyecto-info-grid">
+        <div id="proyecto-descripcion" class="proyecto-descripcion"></div>
+
+        <div class="proyecto-specs">
+          <div class="specs-item">
+            <span class="specs-label">Año</span>
+            <span class="specs-valor" id="specs-anio"></span>
+          </div>
+
+          <div class="specs-item">
+            <span class="specs-label">Cliente</span>
+            <span class="specs-valor" id="specs-cliente"></span>
+          </div>
+
+          <div class="specs-item">
+            <span class="specs-label">Categoría</span>
+            <span class="specs-valor" id="specs-categoria"></span>
+          </div>
+
+          <div class="specs-item">
+            <span class="specs-label">Disciplinas</span>
+            <div class="specs-tags" id="specs-tags"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-fondo"></div>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  </div>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/img/logoSmall.svg" alt="Logo">
+    </div>
+
+    <div class="footer-contacto">
+      <a href="mailto:blanca.pampanas@esdmadrid.es">blanca.pampanas@esdmadrid.es</a>
+      <div class="footer-redes">
+        <a href="https://www.instagram.com/efe43a/" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Behance</a>
+        <a href="#" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

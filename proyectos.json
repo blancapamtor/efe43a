@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "titulo": {
+          "es": "Psicología del color, Eva Heller",
+          "en": "Psychology of Color by Eva Heller"
+        },
+        "subtitulo": {
+          "es": "Rediseño editorial",
+          "en": "Editorial redesign"
+        },
+        "imagenPortada": "assets/img/psColor1.jpg",
+        "descripcion": {
+          "es": "Este proyecto propone una reinterpretación contemporánea de Psicología del color de Eva Heller, integrándolo en una colección editorial pensada para creativos. El concepto central utiliza el degradado cromático como sistema de identidad, transformando la teoría en un lenguaje visual dinámico. El diseño busca equilibrar la funcionalidad de un libro de consulta con una estética vibrante que dialogue directamente con el sector del diseño y las artes visuales.",
+          "en": "This project proposes a contemporary reinterpretation of Eva Heller’s Psychology of Color, integrating it into an editorial collection tailored for creatives. The core concept utilizes chromatic gradients as an identity system, transforming theory into a dynamic visual language. The design seeks to balance the functionality of a reference book with a vibrant aesthetic that speaks directly to the design, communication, and visual arts sectors."
+        },
+        "anio": "2024",
+         "cliente": { "es": "Proyecto personal", "en": "Personal project" },
+         "categoria": { "es": "Editorial", "en": "Editorial" },
+        "tags": ["Ilustración", "Tipografía", "Editorial"],
+        "imagenes": [
+          "assets/img/psColor1.jpg",
+          "assets/img/psColor2.jpg",
+          "assets/img/psColor3.jpg",
+          "assets/img/psColor4.jpg",
+          "assets/img/psColor5.jpg",
+          "assets/img/psColor6.png"
+        ]
+    },
+    {
+        "id": 2,
+        "titulo": {
+          "es": "CataLaLata",
+          "en": "CataLaLata"
+        },
+          "subtitulo": {
+            "es": "Diseño de packaging para concurso CataLaLata, Semifinalista",
+            "en": "Packaging design for CataLaLata contest, Semifinalist"
+          },
+        "imagenPortada": "assets/img/cata1.PNG",
+        "descripcion": {
+          "es": "Este proyecto propone una reinterpretación contemporánea de Psicología del color de Eva Heller, integrándolo en una colección editorial pensada para creativos. El concepto central utiliza el degradado cromático como sistema de identidad, transformando la teoría en un lenguaje visual dinámico. El diseño busca equilibrar la funcionalidad de un libro de consulta con una estética vibrante que dialogue directamente con el sector del diseño y las artes visuales.",
+          "en": "This project proposes a contemporary reinterpretation of Eva Heller’s Psychology of Color, integrating it into an editorial collection tailored for creatives. The core concept utilizes chromatic gradients as an identity system, transforming theory into a dynamic visual language. The design seeks to balance the functionality of a reference book with a vibrant aesthetic that speaks directly to the design, communication, and visual arts sectors."
+        },
+        "anio": "2024",
+         "cliente": { "es": "CataLaLata", "en": "CataLaLata" },
+         "categoria": { "es": "Packaging", "en": "Packaging" },
+        "tags": ["Packaging", "Ilustración", "Tipografía"],
+        "imagenes": [
+          "assets/img/cata1.PNG",
+          "assets/img/cata2.PNG",
+          "assets/img/cata3.PNG",
+          "assets/img/cata4.PNG"
+        ]
+    },
+    {
+      "id": 3,
+      "titulo": {
+        "es": "Create Your Partner",
+        "en": "Create Your Partner"
+      },
+      "subtitulo": {
+        "es": "Fanzine experimental",
+        "en": "Experimental fanzine"
+      },
+      "imagenPortada": "assets/img/create1.jpg",
+      "descripcion": {
+        "es": "Partiendo de un abanico del Museo Nacional de Artes Decorativas, este fanzine explora el cortejo como origen histórico de la cosificación del cuerpo femenino. De forma irónica y satírica, la pieza adopta la estética de una interfaz web donde el usuario (implícitamente masculino) puede configurar a su pareja ideal ajustando atributos físicos y de personalidad como si se tratara de un producto. Una crítica visual a los estereotipos de género disfrazada de experiencia interactiva.",
+        "en": "Taking as its starting point a fan from the Museo Nacional de Artes Decorativas, this fanzine explores courtship as the historical origin of the objectification of the female body. In an ironic and satirical tone, the piece adopts the aesthetic of a web interface where the user —implicitly male— can configure their ideal partner by adjusting physical and personality attributes as if selecting a product. A visual critique of gender stereotypes disguised as an interactive experience."
+      },
+      "anio": "2025",
+      "cliente": {
+        "es": "Proyecto de clase",
+        "en": "Class project"
+      },
+      "categoria": {
+        "es": "Fanzine / Diseño editorial",
+        "en": "Fanzine / Editorial design"
+      },
+      "tags": ["Editorial", "Fanzine", "Ilustración", "Crítica social"],
+      "imagenes": [
+        "assets/img/create1.jpg",
+        "assets/img/create2.jpg",
+        "assets/img/create3.jpg",
+        "assets/img/create4.JPG",
+        "assets/img/create5.JPG"
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": {
+        "es": "Chimpatía",
+        "en": "Chimpatía"
+      },
+      "subtitulo": {
+        "es": "Identidad de marca, Rediseño",
+        "en": "Brand identity, Redesign"
+      },
+      "imagenPortada": "assets/img/chim1.png",
+      "descripcion": {
+        "es": "Rediseño de identidad para Chimpatía, santuario de rescate de animales. El concepto parte del movimiento natural de los primates: las curvas que trazan sus cuerpos al desplazarse se convierten en el recurso visual del sistema gráfico, generando un logotipo orgánico y versátil que refleja los valores del santuario.",
+        "en": "Brand identity redesign for Chimpatía, an animal rescue sanctuary. The concept draws from the natural movement of primates: the curves their bodies trace while moving become the core visual element of the system, resulting in an organic and versatile logotype that reflects the sanctuary's values."
+      },
+      "anio": "2025",
+      "cliente": {
+        "es": "Proyecto de clase",
+        "en": "Class project"
+      },
+      "categoria": {
+        "es": "Identidad de marca",
+        "en": "Brand identity"
+      },
+      "tags": ["Branding", "Identidad", "Logotipo", "Rediseño"],
+      "imagenes": [
+        "assets/img/chim1.png",
+        "assets/img/chim2.jpg",
+        "assets/img/chim3.jpg",
+        "assets/img/chim4.jpg",
+        "assets/img/chim5.jpg"
+      ]
+    }
+
+]

@@ -1,0 +1,174 @@
+@use 'variables' as *;
+@use 'header' as *;
+@use 'footer' as *;
+
+body {
+  overflow-x: hidden;
+  padding-top: 140px;
+}
+
+.sobre-mi {
+  padding: 20px 80px;
+  margin: 0;
+  font-family: $font-body;
+
+  .perfil-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+
+    .perfil-foto {
+      img {
+        width: 90%;
+        height: auto;
+        display: block;
+        transition: filter 0.5s ease;
+      }
+
+      figcaption {
+        font-size: 10px;
+        color: $color-gris-medio;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-top: 10px;
+      }
+    }
+
+    .perfil-info {
+      align-items: start;
+      padding-bottom: 5px;
+      min-width: 0;
+
+      .perfil-titulo {
+        font-size: clamp(40px, 6vw, 72px);
+        line-height: 1;
+        margin: 0px;
+        text-transform: uppercase;
+        min-height: 145px;
+        display: block;
+      }
+
+      .perfil-cuerpo,
+      .perfil-descripcion {
+        margin-bottom: 40px;
+
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+          color: $color-gris-oscuro;
+          margin-bottom: 20px;
+          max-width: 450px;
+
+          &:last-child { margin-bottom: 0; }
+        }
+      }
+
+      .contacto-directo {
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+        color: $color-rojo;
+        font-weight: 700;
+        font-size: 14px;
+        transition: transform 0.3s ease;
+
+        .flecha {
+          transition: transform 0.3s ease;
+          display: inline-block;
+        }
+
+        &:hover {
+          .flecha {
+            transform: translateX(8px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .sobre-mi {
+    padding: 60px 40px;
+
+    .perfil-container {
+      grid-template-columns: 1fr;
+      gap: 50px;
+
+      .perfil-info .perfil-titulo {
+        font-size: 48px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 86px;
+  }
+
+  .sobre-mi {
+    padding: 12px 24px 24px;
+
+    .perfil-container {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      align-items: start;
+
+      .perfil-foto img {
+        width: 100%;
+      }
+
+      .perfil-info {
+        .perfil-titulo {
+          font-size: clamp(34px, 12vw, 52px);
+          min-height: 120px;
+          margin-bottom: 16px;
+        }
+
+        .perfil-cuerpo,
+        .perfil-descripcion {
+          p {
+            max-width: 100%;
+            font-size: 14px;
+            line-height: 1.6;
+          }
+        }
+
+        .contacto-directo {
+          margin-top: 16px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    padding-top: 82px;
+  }
+
+  .sobre-mi {
+    padding: 8px 16px 20px;
+
+    .perfil-container {
+      gap: 22px;
+
+      .perfil-info {
+        .perfil-titulo {
+          font-size: clamp(30px, 11vw, 42px);
+          min-height: 108px;
+        }
+
+        .perfil-cuerpo p,
+        .perfil-descripcion p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

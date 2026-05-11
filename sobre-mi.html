@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mí | Blanca</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/sobre-mi.css">
+</head>
+<body>
+
+  <header>
+    <div class="logoSmall">
+      <img src="assets/img/logoSmall.svg" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html" data-es="TRABAJOS" data-en="WORKS">Trabajos</a>
+      <a href="sobre-mi.html" data-es="SOBRE MÍ" data-en="ABOUT">Sobre mí</a>
+      <a href="contacto.html" data-es="CONTACTO" data-en="CONTACT">Contacto</a>
+    </nav>
+    
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+  
+  <div class="nav-overlay">
+    <nav>
+      <a href="index.html" data-es="ÍNDICE" data-en="INDEX">Índice</a>
+      <a href="sobre-mi.html" data-es="SOBRE MÍ" data-en="ABOUT">Sobre mí</a>
+      <a href="contacto.html" data-es="CONTACTO" data-en="CONTACT">Contacto</a>
+    </nav>
+
+    <div class="lang">
+      <button class="lang-btn activo" data-lang="es">ES</button>
+      <span>/</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <main class="sobre-mi">
+    <section class="perfil-container">
+      
+      <div class="perfil-foto">
+        <figure>
+          <img src="assets/img/miCara.JPG" alt="Ilustración de Blanca por Carmen Valverde">
+          <figcaption data-es="Ilustración por Carmen Valverde" data-en="Illustration by Carmen Valverde">
+            Ilustración por Carmen Valverde
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="perfil-info">
+        <h1 class="perfil-titulo" id="typeit-titulo"></h1>
+        
+        <div class="perfil-descripcion">
+          <p data-es="Soy diseñadora gráfica graduada en la ESD de Madrid. Mi enfoque se centra en la limpieza visual y la funcionalidad tipográfica. Creo que el diseño no solo debe ser estético, sino una herramienta de comunicación precisa." 
+             data-en="I'm a graphic designer graduated from ESD Madrid. My focus is on visual cleanliness and typographic functionality. I believe design shouldn't just be aesthetic, but a precise communication tool.">
+            Soy diseñadora gráfica graduada en la ESD de Madrid. Mi enfoque se centra en la limpieza visual y la funcionalidad tipográfica. Creo que el diseño no solo debe ser estético, sino una herramienta de comunicación precisa.
+          </p>
+          
+          <p data-es="Me apasiona el diseño editorial y la identidad visual, donde cada detalle cuenta para construir una narrativa sólida."
+             data-en="I'm passionate about editorial design and visual identity, where every detail counts to build a solid narrative.">
+            Me apasiona el diseño editorial y la identidad visual, donde cada detalle cuenta para construir una narrativa sólida.
+          </p>
+        </div>
+
+        <a href="contacto.html" class="contacto-directo">
+          <span data-es="TRABAJEMOS JUNTOS" data-en="LET'S WORK TOGETHER">TRABAJEMOS JUNTOS</span>
+          <span class="flecha">→</span>
+        </a>
+      </div> </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/img/logoSmall.svg" alt="Logo">
+    </div>
+  
+    <div class="footer-contacto">
+      <a href="mailto:blanca.pampanas@esdmadrid.es">blanca.pampanas@esdmadrid.es</a>
+      <div class="footer-redes">
+        <a href="https://www.instagram.com/efe43a/" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Behance</a>
+        <a href="#" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+  
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+@use 'variables' as *;
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  box-sizing: border-box;
+  gap: 40px;
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .logoSmall {
+    img {
+      width: 40px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+
+    a {
+      font-family: $font-body;
+      font-size: 10px;
+      text-decoration: none;
+      color: $color-texto;
+      padding: 8px 14px;
+      transition: all 0.2s ease;
+      text-transform: uppercase;
+      font-weight: 300;
+
+
+      &.nav-activo {
+        font-weight: 600;
+        color: $color-rojo;
+      }
+
+      &:hover {
+        background-color: $color-rojo;
+        color: #fff;
+      }
+    }
+  }
+
+  .lang {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    font-family: $font-body;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .lang-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: $font-body;
+      font-size: 12px;
+      color: $color-texto;
+      padding: 2px 4px;
+      transition: all 0.2s ease;
+
+      &:hover { color: $color-rojo; }
+
+      &.activo {
+        color: $color-rojo;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .nav-overlay {
+    display: none;
+  }
+}
+
+.nav-overlay {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    gap: 16px;
+    background-color: rgba($color-fondo, 0.96);
+    backdrop-filter: blur(10px);
+
+    .logoSmall img {
+      width: 32px;
+    }
+
+    nav,
+    .lang {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      z-index: 301;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background-color: $color-texto;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      transform-origin: center;
+    }
+
+    .menu-toggle.abierto span:nth-child(1) {
+      transform: translateY(6.5px) rotate(45deg);
+    }
+
+    .menu-toggle.abierto span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.abierto span:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-45deg);
+    }
+  }
+
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 300;
+    background-color: rgba($color-fondo, 0.98);
+    padding: 96px 20px 32px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.abierto {
+      display: flex;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    nav a {
+      font-family: $font-body;
+      font-size: clamp(30px, 11vw, 46px);
+      font-weight: 700;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $color-texto;
+    }
+
+    nav a.nav-activo {
+      color: $color-rojo;
+    }
+
+    .lang {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: $font-body;
+      font-size: 14px;
+    }
+
+    .lang .lang-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      color: $color-texto;
+    }
+
+    .lang .lang-btn.activo {
+      color: $color-rojo;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    padding: 16px;
+  }
+
+  .nav-overlay {
+    padding: 88px 16px 24px;
+
+    nav a {
+      font-size: clamp(24px, 10vw, 34px);
+    }
+  }
+}
